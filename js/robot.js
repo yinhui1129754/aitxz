@@ -1,7 +1,7 @@
 /**
  * author:375361172@qq.com
  * 游戏开发交流群:859055710
- * 开源地址:
+ * 开源地址:https://github.com/yinhui1129754/aitxz
  * */
 //原始的构造函数 (构造~~)
 function robot(screen){
