@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>推箱子</title>
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+        }
+        canvas{
+            margin: auto;
+            display: block;
+            padding: 0;
+        }
+        #clickRobot{
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            font-size: 16px;
+            padding: 5px 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <script>
+        window.onerror = function(){
+            alert("错误啦");
+        }
+       var oldLog =    console.log;
+        console.log=function (message) {  }
+    </script>
+    <!--data-->
+    <script type="text/javascript" src="js/instance/data.js"></script>
+    <script type="text/javascript" src="js/instance/utils.js"></script>
+    <!--资源对象-->
+    <script type="text/javascript" src="js/instance/source.js"></script>
+    <!--计时器对象-->
+    <script type="text/javascript" src="js/instance/tick.js"></script>
+    <!--精灵对象-->
+    <script type="text/javascript" src="js/render/sprite.js"></script>
+    <!--用户操作对象-->
+    <script type="text/javascript" src="js/render/user.js"></script>
+    <!--屏幕对象-->
+    <script type="text/javascript" src="js/instance/screen.js"></script>
+    <!--自动推对象-->
+    <script type="text/javascript" src="js/robot.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+<div id="clickRobot">
+    点击启动机器人
+</div>
+</body>
+<!--主要进程函数-->
+<script src="js/instance/index.js"></script>
+</html>
