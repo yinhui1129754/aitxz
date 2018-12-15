@@ -253,7 +253,7 @@ function robot(screen){
                 //     this.thinking = false;
                 //     return;
                 // }
-                if(!this.screen.user.timmer){
+                if(this.screen&&this.screen.user&&!this.screen.user.timmer){
                     if(!this.boxPath.length&&!this.nowPath.length&&!this.pathArr.length){
                         this.findBoxEnd();
                     }else if(this.boxPath.length&&!this.nowPath.length&&!this.pathArr.length){

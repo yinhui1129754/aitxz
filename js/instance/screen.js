@@ -21,7 +21,8 @@ function screen(map,w,h,ctx,dom,endCall){
     this.ctx = ctx;
     this.dom = dom;
     this.paddingX = document.documentElement.clientWidth/10*30/75;
-    this.paddingY = document.documentElement.clientWidth/10*30/75;
+    this.paddingY = 0;
+    this.verticalAlign = "middle";
     this.tkInfo = null;
     this.tk = null;
     this.gs = 0;
@@ -82,7 +83,7 @@ screen.prototype = {
         this.maxBox.addChild(this.bg);
     },
     resize:function(){
-        var w = document.documentElement.clientWidth;
+        var w = document.documentElement.clientWidth>640?640:document.documentElement.clientWidth;
         var h = document.documentElement.clientHeight;
         this.dom.width = w;
         this.dom.height = h;
@@ -92,9 +93,13 @@ screen.prototype = {
         var y = this.paddingY;
         var w = (this.dom.width-x*2)/this.mapW;
         var spr = null;
+        if(this.verticalAlign=="middle"){
+            this.paddingY =this.dom.height/2 -  w*this.mapH/2 ;
+        }
         for(var i = 0;i<this.map.length;i++){
             x=this.paddingX+w*(i%this.mapW);
             y =this.paddingY + w*parseInt(i/this.mapH);
+
             if(this.map[i] == 1){
                 spr = new sprite(this.imgObj.stogeImg,x,y,w,w);
                 this.stoge.push(spr);

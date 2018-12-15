@@ -33,7 +33,6 @@
 
     screenEx=initGs(0,tk);
     var robotEx  = new robot(screenEx);
-    debugger;
     if("ontouchend" in document){
         document.getElementById("clickRobot").addEventListener("touchend",function(){
             robotEx.start=!robotEx.start;
