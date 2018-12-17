@@ -10,6 +10,6 @@ render 放控制渲染对象的js文件
 robot.js 是机器人对象的js文件  
 后面会详细对游戏的各个流程进行详细说明   
 ## 项目目录  
-![项目目录截图](https://raw.githubusercontent.com/yinhui1129754/fishing/master/img/pro/m.png)  
+![项目目录截图](https://raw.githubusercontent.com/yinhui1129754/aitxz/master/img/mulu.png)  
 ## 运行效果截图
 ![项目运行效果截图](https://raw.githubusercontent.com/yinhui1129754/aitxz/master/img/GIF.gif)  
