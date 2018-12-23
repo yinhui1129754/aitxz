@@ -15,6 +15,9 @@ robot.js 是机器人对象的js文件
 [场景对象screen.js](https://blog.csdn.net/baidu_38766085/article/details/85137421)  
 [资源加载对象source.js](https://blog.csdn.net/baidu_38766085/article/details/85220685)  
 [工具类和data.js的说明](https://blog.csdn.net/baidu_38766085/article/details/85220830)  
+用户对象user.js编写中   
+流程控制index.js编写中  
+机器人对象robot.js编写中   
 ## 项目目录  
 ![项目目录截图](https://raw.githubusercontent.com/yinhui1129754/aitxz/master/img/mulu.png)  
 ## 运行效果截图
